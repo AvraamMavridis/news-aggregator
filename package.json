@@ -12,6 +12,7 @@
     "drop": "node ./migrations/drop.js"
   },
   "dependencies": {
+    "cheerio": "^0.22.0",
     "ejs": "2.4.1",
     "express": "4.13.3",
     "knex": "^0.12.6",
