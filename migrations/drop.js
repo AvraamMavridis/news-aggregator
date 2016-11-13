@@ -1,3 +1,5 @@
+'use strict';
+
 let knex = require('../db');
 
 console.info('Drop Table');

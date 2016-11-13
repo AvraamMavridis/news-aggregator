@@ -1,3 +1,5 @@
+'use strict';
+
 const cheerio = require('cheerio');
 const db = require('../db');
 var md5 = require('md5');
