@@ -14,7 +14,8 @@
   "dependencies": {
     "ejs": "2.4.1",
     "express": "4.13.3",
-    "knex": "^0.12.6"
+    "knex": "^0.12.6",
+    "node-fetch": "^1.6.3"
   },
   "repository": {
     "type": "git",
