@@ -13,7 +13,7 @@ module.exports = function scrap( body )
     let link = $(el).attr('href');
     let title = $(el).text()
 
-    return articleObject = {
+    return  {
       id: md5(title + 'www.in.gr'),
       title: title,
       link: link,
