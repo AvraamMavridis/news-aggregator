@@ -7,11 +7,14 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "migrate": "node ./migrations/create.js",
+    "drop": "node ./migrations/drop.js"
   },
   "dependencies": {
     "ejs": "2.4.1",
-    "express": "4.13.3"
+    "express": "4.13.3",
+    "knex": "^0.12.6"
   },
   "repository": {
     "type": "git",
@@ -22,5 +25,12 @@
     "heroku",
     "express"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "cheerio": "^0.22.0",
+    "lodash": "^4.16.6",
+    "md5": "^2.2.1",
+    "node-fetch": "^1.6.3",
+    "pg": "^6.1.0"
+  }
 }

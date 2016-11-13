@@ -1,12 +1,13 @@
 var express = require('express');
 var app = express();
+var spider = require('./spider')
+spider.start();
 
 app.set('port', (process.env.PORT || 5000));
-
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {
-  response.render(JSON.stringify(request));
+  response.send('hello world');
 });
 
 app.listen(app.get('port'), function() {
