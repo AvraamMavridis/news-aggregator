@@ -33,9 +33,9 @@ module.exports = function scrap( body )
         return db.batchInsert('articles', articlesToInsert)
             .returning('id');
       })
-      .then((data)=>
+      .then((data)=>{
         console.info('SCRAP ENDED')
         console.log(data)
-      )
+      })
       .catch(console.error)
 }
