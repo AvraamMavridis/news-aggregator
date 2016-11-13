@@ -7,6 +7,7 @@ const _ = require('lodash');
 
 module.exports = function scrap( body )
 {
+  console.info('SCRAP START')
   let $ = cheerio.load(body);
   let articles = $('#in-column-main .section3 a');
   articles = articles.map((i, el) => {
@@ -32,6 +33,9 @@ module.exports = function scrap( body )
         return db.batchInsert('articles', articlesToInsert)
             .returning('id');
       })
-      .then(console.log)
+      .then((data)=>
+        console.info('SCRAP ENDED')
+        console.log(data)
+      )
       .catch(console.error)
 }

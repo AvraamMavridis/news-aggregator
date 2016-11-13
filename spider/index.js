@@ -17,7 +17,7 @@ const start = function(){
 
   interval = setInterval(function(){
     _start()
-  },10000)
+  },300000)
 }
 
 const close = function()
